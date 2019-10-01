@@ -1,0 +1,34 @@
+@import './color.scss';
+
+.board {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  border: 6px solid $black;
+
+  .board_square-white {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: $white;
+    float: left;
+  }
+  .board_square-orange {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: $orange;
+    float: left;
+  }
+
+  .accessible {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $blue;
+    border-radius: 32px;
+    top: 28px;
+    left: 28px;
+    pointer-events: none;
+  }
+}

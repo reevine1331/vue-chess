@@ -1,0 +1,41 @@
+@import './color.scss';
+
+
+.piece {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  @mixin piece {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: 64px 64px; //width, heightと同じになる
+    background-repeat: no-repeat;
+  }
+  .pawn {
+    @include piece
+    background-image: url('../assets/pieces/pawn-black.png');
+  }
+  .luke {
+    @include piece
+    background-image: url('../assets/pieces/luke-black.png');
+  }
+  .night {
+    @include piece
+    background-image: url('../assets/pieces/night-black.png');
+  }
+}
+
+.selected {
+  background-color: $blue;
+}
+
+.v-enter-active, .v-leave-active {
+  transition: opacity .5s
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0
+}

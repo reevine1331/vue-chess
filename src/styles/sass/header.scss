@@ -1,0 +1,18 @@
+@import './color.scss';
+@import './font-size.scss';
+
+.header {
+  width: 100%;
+  background-color: $blue;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0px 12px;
+  .header_title {
+    font-size: $font-l;
+    user-select: none;
+    cursor: pointer;
+  }
+}

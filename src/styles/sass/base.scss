@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap');
+
+* {
+  font-family: 'Lexend Exa', sans-serif;
+  font-feature-settings: "pkna" 1;
+}
+
+html {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+body {
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
